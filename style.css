@@ -9,11 +9,19 @@
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 80px;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .profile-card {
     justify-self: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding: 20px;
     max-width: 50rem;
     max-height: max-content;
@@ -49,6 +57,62 @@ body {
 .profile-card--description {
     margin-top: -12px;
     grid-area: description;
+    text-align: left;
+    color: rgb(26, 84, 92);
+}
+
+
+
+.projects {
+    background-color: rgb(83, 189, 154);
+    border: 0 solid;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 5px rgb(40, 255, 187);
+    justify-self: center;
+    padding: 20px;
+    max-width: 50rem;
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    background-color: rgb(83, 189, 154);
+    border: 0 solid;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 5px rgb(40, 255, 187);
+}
+
+.projects--project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(132, 212, 186);
+    border-radius: 25px;
+}
+
+.projects--project--image {
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 140px;
+    width: 140px;
+}
+
+.projects--project--name a {
+    text-decoration: none;
+    color: rgb(16, 54, 59);
+}
+.projects--project--name {
+    font-weight: 900;
+}
+
+.projects--project--description {
     text-align: left;
     color: rgb(26, 84, 92);
 }
